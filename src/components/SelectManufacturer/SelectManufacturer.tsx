@@ -1,0 +1,15 @@
+import { FC } from 'react';
+
+interface SelectManufacturerProps {
+
+}
+
+const SelectManufacturer: FC<SelectManufacturerProps> = () => {
+    return (
+        <select>
+            <option value="Knauf">Knauf</option>
+        </select>
+    )
+};
+
+export default SelectManufacturer;
