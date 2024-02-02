@@ -11,8 +11,11 @@
 
 select{
     background: transparent;
-    width: auto;
-    height: 20px;
+    min-width: 30%;
+    outline: none;
+    font-size: 25px;
+    background: white;
+    height: 80%;
     border-radius: 5px;
 }
 
@@ -75,19 +78,17 @@ header{
     font-size: 30px;
 }
 
-.product-card__info > .info-manufacturer{
-    font-size: 20px;
-    color: gray;
-    line-height: 10px;
-}
-
 .product-card__info > .info-description{
-    margin-top: 9px;
+    margin-top: 3px;
     font-size: 17px;
 }
 
-.product-card__info > .info-price{
+.product-card__info > .info-manufacturer{
     margin-top: auto;
+    font-size: 20px;
+}
+
+.product-card__info > .info-price{
     font-weight: 700;
     font-size: 24px;
 }

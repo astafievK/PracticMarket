@@ -15,9 +15,9 @@ const ProductCard: FC<ProductCardProps> = (props) => {
             <img className="product-card__image" src={props.productTitle} alt={props.productImage}/>
             <div className="product-card__info">
                 <span className="info-title">{props.productTitle}</span>
-                <span className="info-manufacturer">{props.productManufacturerName}</span>
                 <span className="info-description">{props.productDescription}</span>
-                <span className="info-price">{props.productPrice}</span>
+                <span className="info-manufacturer">Производитель: {props.productManufacturerName}</span>
+                <span className="info-price">Цена: {props.productPrice}</span>
             </div>
             <div className="product-card__actions">
                 <span className="in-stock">На складе: <span className="count">{props.productInStock}</span></span>
