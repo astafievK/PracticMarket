@@ -6934,31 +6934,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\0109-02\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Astaf\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Temp\\ispp01\\УП.04\\ApiMarket\\ApiMarket\\ApiMarket.csproj",
+      "projectUniqueName": "C:\\Users\\Astaf\\OneDrive\\Документы\\Projects\\Уч практика 2024\\УП 04 02\\PracticMarket\\Api\\ApiMarket.csproj",
       "projectName": "ApiMarket",
-      "projectPath": "C:\\Temp\\ispp01\\УП.04\\ApiMarket\\ApiMarket\\ApiMarket.csproj",
-      "packagesPath": "C:\\Users\\0109-02\\.nuget\\packages\\",
-      "outputPath": "C:\\Temp\\ispp01\\УП.04\\ApiMarket\\ApiMarket\\obj\\",
+      "projectPath": "C:\\Users\\Astaf\\OneDrive\\Документы\\Projects\\Уч практика 2024\\УП 04 02\\PracticMarket\\Api\\ApiMarket.csproj",
+      "packagesPath": "C:\\Users\\Astaf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Astaf\\OneDrive\\Документы\\Projects\\Уч практика 2024\\УП 04 02\\PracticMarket\\Api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\0109-02\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Astaf\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7033,7 +7026,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
