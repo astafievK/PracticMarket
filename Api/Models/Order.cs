@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace ApiMarket.Models;
 
@@ -21,7 +22,7 @@ public partial class Order
 
     public virtual Orderstatus OrderStatus { get; set; } = null!;
 
-    public virtual ICollection<Ordercomposion> Ordercomposions { get; } = new List<Ordercomposion>();
+    [JsonIgnore] public virtual ICollection<Ordercomposion> Ordercomposions { get; } = new List<Ordercomposion>();
 
     public virtual Pickuppoint PickupPoint { get; set; } = null!;
 

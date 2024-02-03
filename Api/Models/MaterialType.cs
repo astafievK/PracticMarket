@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace ApiMarket.Models;
 
@@ -9,5 +10,5 @@ public partial class MaterialType
 
     public string MaterialTypeName { get; set; } = null!;
 
-    public virtual ICollection<Material> Materials { get; } = new List<Material>();
+    [JsonIgnore] public virtual ICollection<Material> Materials { get; } = new List<Material>();
 }

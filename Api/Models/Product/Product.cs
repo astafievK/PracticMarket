@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Api.Common.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace ApiMarket.Models.Product;
 
@@ -33,9 +35,9 @@ public partial class Product
 
     public virtual Provider Manufacturer { get; set; } = null!;
 
-    public virtual MeasureType MeasureType { get; set; } = null!;
+   public virtual MeasureType MeasureType { get; set; } = null!;
 
-    public virtual ICollection<Ordercomposion> Ordercomposions { get; } = new List<Ordercomposion>();
+    [JsonIgnore] public virtual ICollection<Ordercomposion> Ordercomposions { get; } = new List<Ordercomposion>();
 
     public virtual Provider Provider { get; set; } = null!;
 }

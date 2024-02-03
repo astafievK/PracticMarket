@@ -1,4 +1,4 @@
-interface Product{
+interface IProduct{
     productArticleNumber: string,
     productName: string,
     productDescription: string,
@@ -6,8 +6,8 @@ interface Product{
     productPrice: number,
     productMaxDiscount: number,
     productQuantityInStock: number,
-    providerId: number,
-    manufacturerId: number,
-    categoryId: number,
-    measureTypeId: number,
+    provider: number,
+    manufacturer: IManufacturer[],
+    category: number,
+    measureType: number,
 }

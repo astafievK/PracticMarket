@@ -10,10 +10,9 @@ interface ProductCardProps {
 }
 
 const ProductCard: FC<ProductCardProps> = (props) => {
-
     return (
         <div className="product-card">
-            <img className="product-card__image" src={props.productTitle} alt={props.productImage}/>
+            <img className="product-card__image" src={"/src/assets/products/"+`${props.productImage !== null ? props.productImage : "empty.png"}`} alt={props.productImage}/>
             <div className="product-card__info">
                 <span className="info-title">{props.productTitle}</span>
                 <span className="info-description">{props.productDescription}</span>

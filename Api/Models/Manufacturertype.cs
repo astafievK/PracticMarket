@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace ApiMarket.Models;
 
@@ -9,5 +10,5 @@ public partial class Manufacturertype
 
     public string ManufacturerTypeName { get; set; } = null!;
 
-    public virtual ICollection<Manufacturer.Manufacturer> Manufacturers { get; } = new List<Manufacturer.Manufacturer>();
+    [JsonIgnore] public virtual ICollection<Manufacturer.Manufacturer> Manufacturers { get; } = new List<Manufacturer.Manufacturer>();
 }

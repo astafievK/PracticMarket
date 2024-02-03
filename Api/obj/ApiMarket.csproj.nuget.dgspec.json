@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Astaf\\OneDrive\\Документы\\Projects\\Уч практика 2024\\УП 04 02\\PracticMarket\\Api\\ApiMarket.csproj": {}
+    "C:\\Temp\\ispp01\\УП.04\\PracticMarket\\ApiMarket\\ApiMarket.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Astaf\\OneDrive\\Документы\\Projects\\Уч практика 2024\\УП 04 02\\PracticMarket\\Api\\ApiMarket.csproj": {
+    "C:\\Temp\\ispp01\\УП.04\\PracticMarket\\ApiMarket\\ApiMarket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Astaf\\OneDrive\\Документы\\Projects\\Уч практика 2024\\УП 04 02\\PracticMarket\\Api\\ApiMarket.csproj",
+        "projectUniqueName": "C:\\Temp\\ispp01\\УП.04\\PracticMarket\\ApiMarket\\ApiMarket.csproj",
         "projectName": "ApiMarket",
-        "projectPath": "C:\\Users\\Astaf\\OneDrive\\Документы\\Projects\\Уч практика 2024\\УП 04 02\\PracticMarket\\Api\\ApiMarket.csproj",
-        "packagesPath": "C:\\Users\\Astaf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Astaf\\OneDrive\\Документы\\Projects\\Уч практика 2024\\УП 04 02\\PracticMarket\\Api\\obj\\",
+        "projectPath": "C:\\Temp\\ispp01\\УП.04\\PracticMarket\\ApiMarket\\ApiMarket.csproj",
+        "packagesPath": "C:\\Users\\0109-02\\.nuget\\packages\\",
+        "outputPath": "C:\\Temp\\ispp01\\УП.04\\PracticMarket\\ApiMarket\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Astaf\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\0109-02\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,6 +72,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -94,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

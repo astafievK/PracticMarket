@@ -8,8 +8,8 @@ interface PageCatalogProps {
 }
 
 const PageCatalog: FC<PageCatalogProps> = () => {
-    const {data} = useGetProductsQuery()
-
+    const {data=[]} = useGetProductsQuery()
+    console.log(data)
     return (
         <>
             <HeaderCatalog/>
@@ -19,7 +19,7 @@ const PageCatalog: FC<PageCatalogProps> = () => {
                         <ProductCard
                             productImage={product.productPhoto}
                             productTitle={product.productName}
-                            productManufacturerName={String(product.manufacturerId)}
+                            productManufacturerName={product.manufacturerId.ManufacturerName}
                             productDescription={product.productDescription}
                             productPrice={product.productPrice}
                             productInStock={product.productQuantityInStock}

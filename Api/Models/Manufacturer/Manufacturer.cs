@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Api.Common.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace ApiMarket.Models.Manufacturer;
 

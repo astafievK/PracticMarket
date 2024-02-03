@@ -1,13 +1,13 @@
-import {api} from "./api.ts";
+import {baseApi} from "./api.ts";
 
-export const productApi = api.injectEndpoints({
+export const productApi = baseApi.injectEndpoints({
     endpoints: builder => ({
-        getProducts: builder.query<Product[], void>({
+        getProducts: builder.query<IProduct[], void>({
             query: () => ({
                 url: `Products`,
                 method: "GET",
             }),
-        }),
+        })
     })
 })
 

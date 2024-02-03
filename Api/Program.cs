@@ -1,8 +1,8 @@
 using Api.Common;
-using Api.Common.Interfaces;
 using Api.Common.Mappings;
 using ApiMarket.Context;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 RegisterServices(builder.Services, builder.Configuration);
@@ -13,11 +13,16 @@ ConfigureApp(application);
 
 await application.RunAsync();
 
+builder.Services.AddControllers().AddJsonOptions(x =>
+    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+
 void RegisterServices(IServiceCollection services, IConfiguration configuration)
 {
     services.AddEndpointsApiExplorer();
     services.AddSwaggerGen();
     services.AddControllers();
+
     services.AddDbContext<Ispp01up02Context>(options =>
         options.UseMySql("Name=Database",
         new MySqlServerVersion(new Version(8, 0, 11))));

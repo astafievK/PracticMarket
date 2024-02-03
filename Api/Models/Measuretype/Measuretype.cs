@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Api.Common.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace ApiMarket.Models;

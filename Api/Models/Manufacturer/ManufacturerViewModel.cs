@@ -1,4 +1,5 @@
-﻿using Api.Common.Interfaces;
+﻿
+using Api.Common.Interfaces;
 using System;
 using System.Collections.Generic;
 
@@ -16,7 +17,7 @@ public partial class ManufacturerViewModel : IMapWith<Manufacturer>
 
     public DateOnly ManufacturerDealStartDate { get; set; }
 
-    /*public Manufacturertype ManufacturerType { get; set; } = null!;
+    public Manufacturertype ManufacturerType { get; set; } = null!;
 
-    public ICollection<Material> Materials { get; } = new List<Material>();*/
+    public ICollection<Material> Materials { get; } = new List<Material>();
 }

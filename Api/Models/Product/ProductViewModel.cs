@@ -1,4 +1,5 @@
-﻿using Api.Common.Interfaces;
+﻿
+using Api.Common.Interfaces;
 using ApiMarket.Models.Manufacturer;
 
 namespace ApiMarket.Models.Product

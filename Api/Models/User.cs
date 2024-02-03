@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace ApiMarket.Models;
 
@@ -19,7 +20,7 @@ public partial class User
 
     public int RoleId { get; set; }
 
-    public virtual ICollection<Order> Orders { get; } = new List<Order>();
+    [JsonIgnore] public virtual ICollection<Order> Orders { get; } = new List<Order>();
 
     public virtual Role Role { get; set; } = null!;
 }
